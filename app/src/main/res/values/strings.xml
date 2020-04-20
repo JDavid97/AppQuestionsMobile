@@ -1,0 +1,65 @@
+<resources>
+    <string name="tfZemuisca">ZEMUISCA</string>
+    <string name="app_name">Proyecto Apps Moviles</string>
+    <string name="botonGeografia">Geografía y Politica</string>
+    <string name="botonLagunas">Recorrido Sagrado</string>
+    <string name="botonMitologia">Mitología</string>
+    <string name="botonCostumbres">Costumbres</string>
+    <string name="botonPremios">Progreso</string>
+    <string name="botonSalir">Salir</string>
+
+    <string name="botonSiguiente">Siguiente</string>
+    <string name="botonAnterior">Anterior</string>
+    <string name="tfInterfazGeografia">Geografia y Politica</string>
+
+    <array name="textoGeografia">
+        <item>1 PRIMERA PREGUNTA DEL TEMA GEOGRAFIA</item>
+        <item>2 SEGUNDA PREGUNTA DEL TEMA GEOGRAFIA</item>
+        <item>3 TERCERA PREGUNTA DEL TEMA GEOGRAFIA</item>
+        <item></item>
+        <item>4 CUARTA PREGUNTA DEL TEMA GEOGRAFIA</item>
+        <item>5 QUINTA PREGUNTA DEL TEMA GEOGRAFIA</item>
+        <item>6 SEXTA PREGUNTA DEL TEMA GEOGRAFIA</item>
+        <item></item>
+
+    </array>
+
+    <array name="textoRecorridoSagrado">
+        <item>1 PRIMERA PREGUNTA DEL TEMA RECORRIDO SAGRADO</item>
+        <item>2 SEGUNDA PREGUNTA DEL TEMA RECORRIDO SAGRADO</item>
+        <item>3 TERCERA PREGUNTA DEL TEMA RECORRIDO SAGRADO</item>
+        <item></item>
+        <item>4 CUARTA PREGUNTA DEL TEMA RECORRIDO SAGRADO</item>
+        <item>5 QUINTA PREGUNTA DEL TEMA RECORRIDO SAGRADO</item>
+        <item>6 SEXTA PREGUNTA DEL TEMA RECORRIDO SAGRADO</item>
+        <item></item>
+    </array>
+
+    <array name="textoMitología">
+        <item>1 PRIMERA PREGUNTA DEL TEMA MITOLOGÍA</item>
+        <item>2 SEGUNDA PREGUNTA DEL TEMA MITOLOGÍA</item>
+        <item>3 TERCERA PREGUNTA DEL TEMA MITOLOGÍA</item>
+        <item></item>
+        <item>4 CUARTA PREGUNTA DEL TEMA MITOLOGÍA</item>
+        <item>5 QUINTA PREGUNTA DEL TEMA MITOLOGÍA</item>
+        <item>6 SEXTA PREGUNTA DEL TEMA MITOLOGÍA</item>
+        <item></item>
+    </array>
+
+    <array name="textoCostumbres">
+        <item>1 PRIMERA PREGUNTA DEL TEMA COSTUMBRES</item>
+        <item>2 SEGUNDA PREGUNTA DEL TEMA COSTUMBRES</item>
+        <item>3 TERCERA PREGUNTA DEL TEMA COSTUMBRES</item>
+        <item></item>
+        <item>4 CUARTA PREGUNTA DEL TEMA COSTUMBRES</item>
+        <item>5 QUINTA PREGUNTA DEL TEMA COSTUMBRES</item>
+        <item>6 SEXTA PREGUNTA DEL TEMA COSTUMBRES</item>
+        <item></item>
+    </array>
+
+    <string name="tfPregunta">Pregunta</string>
+    <string name="botonEnviarRespuesta">Enviar</string>
+
+    <string name="tfProgreso">Progreso</string>
+    <string name="botonAtras">Atras</string>
+</resources>

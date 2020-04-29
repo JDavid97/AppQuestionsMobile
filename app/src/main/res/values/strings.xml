@@ -13,47 +13,63 @@
     <string name="tfInterfazGeografia">Geografia y Politica</string>
 
     <array name="textoGeografia">
-        <item>1 PRIMERA PREGUNTA DEL TEMA GEOGRAFIA</item>
-        <item>2 SEGUNDA PREGUNTA DEL TEMA GEOGRAFIA</item>
-        <item>3 TERCERA PREGUNTA DEL TEMA GEOGRAFIA</item>
+        <item>1 PRIMER TEXTO DEL TEMA GEOGRAFIA</item>
+        <item>2 SEGUNDO TEXTO DEL TEMA GEOGRAFIA</item>
+        <item>3 TERCER TEXTO DEL TEMA GEOGRAFIA</item>
         <item></item>
-        <item>4 CUARTA PREGUNTA DEL TEMA GEOGRAFIA</item>
-        <item>5 QUINTA PREGUNTA DEL TEMA GEOGRAFIA</item>
-        <item>6 SEXTA PREGUNTA DEL TEMA GEOGRAFIA</item>
+        <item>4 CUARTO TEXTO DEL TEMA GEOGRAFIA</item>
+        <item>5 QUINTO TEXTO DEL TEMA GEOGRAFIA</item>
+        <item>6 SEXTO TEXTO DEL TEMA GEOGRAFIA</item>
+        <item></item>
+        <item>7 SEPTIMO TEXTO DEL TEMA GEOGRAFIA</item>
+        <item>8 OCTAVO TEXTO DEL TEMA GEOGRAFIA</item>
+        <item>9 NOVENO TEXTO DEL TEMA GEOGRAFIA</item>
         <item></item>
 
     </array>
 
     <array name="textoRecorridoSagrado">
-        <item>1 PRIMERA PREGUNTA DEL TEMA RECORRIDO SAGRADO</item>
-        <item>2 SEGUNDA PREGUNTA DEL TEMA RECORRIDO SAGRADO</item>
-        <item>3 TERCERA PREGUNTA DEL TEMA RECORRIDO SAGRADO</item>
+        <item>1 PRIMER TEXTO DEL TEMA RECORRIDO SAGRADO</item>
+        <item>2 SEGUNDO TEXTO DEL TEMA RECORRIDO SAGRADO</item>
+        <item>3 TERCER TEXTO DEL TEMA RECORRIDO SAGRADO</item>
         <item></item>
-        <item>4 CUARTA PREGUNTA DEL TEMA RECORRIDO SAGRADO</item>
-        <item>5 QUINTA PREGUNTA DEL TEMA RECORRIDO SAGRADO</item>
-        <item>6 SEXTA PREGUNTA DEL TEMA RECORRIDO SAGRADO</item>
+        <item>4 CUARTO TEXTO DEL TEMA RECORRIDO SAGRADO</item>
+        <item>5 QUINTO TEXTO DEL TEMA RECORRIDO SAGRADO</item>
+        <item>6 SEXTA TEXTO DEL TEMA RECORRIDO SAGRADO</item>
+        <item></item>
+        <item>7 SEPTIMO TEXTO DEL TEMA RECORRIDO SAGRADO</item>
+        <item>8 OCTAVO TEXTO DEL TEMA RECORRIDO SAGRADO</item>
+        <item>9 NOVENO TEXTO DEL TEMA RECORRIDO SAGRADO</item>
         <item></item>
     </array>
 
     <array name="textoMitología">
-        <item>1 PRIMERA PREGUNTA DEL TEMA MITOLOGÍA</item>
-        <item>2 SEGUNDA PREGUNTA DEL TEMA MITOLOGÍA</item>
-        <item>3 TERCERA PREGUNTA DEL TEMA MITOLOGÍA</item>
+        <item>1 PRIMER TEXTO DEL TEMA MITOLOGÍA</item>
+        <item>2 SEGUNDO TEXTO DEL TEMA MITOLOGÍA</item>
+        <item>3 TERCERO TEXTO DEL TEMA MITOLOGÍA</item>
         <item></item>
-        <item>4 CUARTA PREGUNTA DEL TEMA MITOLOGÍA</item>
-        <item>5 QUINTA PREGUNTA DEL TEMA MITOLOGÍA</item>
-        <item>6 SEXTA PREGUNTA DEL TEMA MITOLOGÍA</item>
+        <item>4 CUARTO TEXTO DEL TEMA MITOLOGÍA</item>
+        <item>5 QUINTO TEXTO DEL TEMA MITOLOGÍA</item>
+        <item>6 SEXTO TEXTO DEL TEMA MITOLOGÍA</item>
+        <item></item>
+        <item>7 SEPTIMO TEXTO DEL TEMA MITOLOGÍA</item>
+        <item>8 OCTAVO TEXTO DEL TEMA MITOLOGÍA</item>
+        <item>9 NOVENO TEXTO DEL TEMA MITOLOGÍA</item>
         <item></item>
     </array>
 
     <array name="textoCostumbres">
-        <item>1 PRIMERA PREGUNTA DEL TEMA COSTUMBRES</item>
-        <item>2 SEGUNDA PREGUNTA DEL TEMA COSTUMBRES</item>
-        <item>3 TERCERA PREGUNTA DEL TEMA COSTUMBRES</item>
+        <item>1 PRIMERA TEXTO DEL TEMA COSTUMBRES</item>
+        <item>2 SEGUNDA TEXTO DEL TEMA COSTUMBRES</item>
+        <item>3 TERCERA TEXTO DEL TEMA COSTUMBRES</item>
         <item></item>
-        <item>4 CUARTA PREGUNTA DEL TEMA COSTUMBRES</item>
-        <item>5 QUINTA PREGUNTA DEL TEMA COSTUMBRES</item>
-        <item>6 SEXTA PREGUNTA DEL TEMA COSTUMBRES</item>
+        <item>4 CUARTA TEXTO DEL TEMA COSTUMBRES</item>
+        <item>5 QUINTA TEXTO DEL TEMA COSTUMBRES</item>
+        <item>6 SEXTA TEXTO DEL TEMA COSTUMBRES</item>
+        <item></item>
+        <item>7 SEPTIMA TEXTO DEL TEMA COSTUMBRES</item>
+        <item>8 OCTAVA TEXTO DEL TEMA COSTUMBRES</item>
+        <item>9 NOVENA TEXTO DEL TEMA COSTUMBRES</item>
         <item></item>
     </array>
 
@@ -62,4 +78,105 @@
 
     <string name="tfProgreso">Progreso</string>
     <string name="botonAtras">Atras</string>
+
+    <array name="preguntasGeografia">
+        <item>1 PRIMERA PREGUNTA GEOGRAFIA</item>
+        <item>2 SEGUNDA PREGUNTA GEOGRAFIA</item>
+        <item>3 TERCERA PREGUNTA GEOGRAFIA</item>
+    </array>
+
+    <array name="repuestasPrimeraPreguntaGeografia">
+        <item>Opcion1 pregunta1 Geografia</item>
+        <item>Opcion2 pregunta1 Geografia</item>
+        <item>Opcion3 pregunta1 Geografia</item>
+        <item>Opcion4 pregunta1 Geografia</item>
+    </array>
+    <array name="repuestasSegundaPreguntaGeografia">
+        <item>Opcion1 pregunta2 Geografia</item>
+        <item>Opcion2 pregunta2 Geografia</item>
+        <item>Opcion3 pregunta2 Geografia</item>
+        <item>Opcion4 pregunta2 Geografia</item>
+    </array>
+    <array name="repuestasTerceraPreguntaGeografia">
+        <item>Opcion1 pregunta3 Geografia</item>
+        <item>Opcion2 pregunta3 Geografia</item>
+        <item>Opcion3 pregunta3 Geografia</item>
+        <item>Opcion4 pregunta3 Geografia</item>
+    </array>
+
+    <array name="preguntasRecorridoSagrado">
+        <item>1 PRIMERA PREGUNTA RECORRIDO SAGRADO</item>
+        <item>2 SEGUNDA PREGUNTA RECORRIDO SAGRADO</item>
+        <item>3 TERCERA PREGUNTA RECORRIDO SAGRADO</item>
+    </array>
+
+    <array name="repuestasPrimeraPreguntaRecorridoSagrado">
+        <item>Opcion1 pregunta1 RECORRIDO SAGRADO</item>
+        <item>Opcion2 pregunta1 RECORRIDO SAGRADO</item>
+        <item>Opcion3 pregunta1 RECORRIDO SAGRADO</item>
+        <item>Opcion4 pregunta1 RECORRIDO SAGRADO</item>
+    </array>
+    <array name="repuestasSegundaPreguntaRecorridoSagrado">
+        <item>Opcion1 pregunta2 RECORRIDO SAGRADO</item>
+        <item>Opcion2 pregunta2 RECORRIDO SAGRADO</item>
+        <item>Opcion3 pregunta2 RECORRIDO SAGRADO</item>
+        <item>Opcion4 pregunta2 RECORRIDO SAGRADO</item>
+    </array>
+    <array name="repuestasTerceraPreguntaRecorridoSagrado">
+        <item>Opcion1 pregunta3 RECORRIDO SAGRADO</item>
+        <item>Opcion2 pregunta3 RECORRIDO SAGRADO</item>
+        <item>Opcion3 pregunta3 RECORRIDO SAGRADO</item>
+        <item>Opcion4 pregunta3 RECORRIDO SAGRADO</item>
+    </array>
+
+    <array name="preguntasMitologia">
+        <item>1 PRIMERA PREGUNTA MITOLOGIA</item>
+        <item>2 SEGUNDA PREGUNTA MITOLOGIA</item>
+        <item>3 TERCERA PREGUNTA MITOLOGIA</item>
+    </array>
+
+    <array name="repuestasPrimeraPreguntaMitologia">
+        <item>Opcion1 pregunta1 MITOLOGIA</item>
+        <item>Opcion2 pregunta1 MITOLOGIA</item>
+        <item>Opcion3 pregunta1 MITOLOGIA</item>
+        <item>Opcion4 pregunta1 MITOLOGIA</item>
+    </array>
+    <array name="repuestasSegundaPreguntaMitologia">
+        <item>Opcion1 pregunta2 MITOLOGIA</item>
+        <item>Opcion2 pregunta2 MITOLOGIA</item>
+        <item>Opcion3 pregunta2 MITOLOGIA</item>
+        <item>Opcion4 pregunta2 MITOLOGIA</item>
+    </array>
+    <array name="repuestasTerceraPreguntaMitologia">
+        <item>Opcion1 pregunta3 MITOLOGIA</item>
+        <item>Opcion2 pregunta3 MITOLOGIA</item>
+        <item>Opcion3 pregunta3 MITOLOGIA</item>
+        <item>Opcion4 pregunta3 MITOLOGIA</item>
+    </array>
+
+
+    <array name="preguntasCostumbres">
+        <item>1 PRIMERA PREGUNTA COSTUMBRES</item>
+        <item>2 SEGUNDA PREGUNTA COSTUMBRES</item>
+        <item>3 TERCERA PREGUNTA COSTUMBRES</item>
+    </array>
+
+    <array name="repuestasPrimeraPreguntaCostumbres">
+        <item>Opcion1 pregunta1 COSTUMBRES</item>
+        <item>Opcion2 pregunta1 COSTUMBRES</item>
+        <item>Opcion3 pregunta1 COSTUMBRES</item>
+        <item>Opcion4 pregunta1 COSTUMBRES</item>
+    </array>
+    <array name="repuestasSegundaPreguntaCostumbres">
+        <item>Opcion1 pregunta2 COSTUMBRES</item>
+        <item>Opcion2 pregunta2 COSTUMBRES</item>
+        <item>Opcion3 pregunta2 COSTUMBRES</item>
+        <item>Opcion4 pregunta2 COSTUMBRES</item>
+    </array>
+    <array name="repuestasTerceraPreguntaCostumbres">
+        <item>Opcion1 pregunta3 COSTUMBRES</item>
+        <item>Opcion2 pregunta3 COSTUMBRES</item>
+        <item>Opcion3 pregunta3 COSTUMBRES</item>
+        <item>Opcion4 pregunta3 COSTUMBRES</item>
+    </array>
 </resources>

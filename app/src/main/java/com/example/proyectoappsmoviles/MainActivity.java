@@ -1,5 +1,6 @@
 package com.example.proyectoappsmoviles;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;

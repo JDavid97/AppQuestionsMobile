@@ -1,6 +1,5 @@
 package com.example.proyectoappsmoviles;
 
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -11,12 +10,13 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-    public int puntajeGeografia = 0;
-    public int puntajeRecorrido = 0;
-    public int puntajeMitologia = 0;
-    public int puntajeCostumbres = 0;
+    public int puntajeGeografia = 100;
+    public int puntajeRecorrido = 100;
+    public int puntajeMitologia = 100;
+    public int puntajeCostumbres = 100;
     ArrayList<Integer> puntajes = new ArrayList<>();
 
+    public String mensaje;
 
 
     String cadena = "";
@@ -29,28 +29,37 @@ public class MainActivity extends AppCompatActivity {
         Bundle miBundle = this.getIntent().getExtras();
 
         if(miBundle!=null) {
-            String mensaje = miBundle.getString("resultado");
-            cadena = mensaje;
-            /*if(cadena.contains("G0")){
-                puntajeGeografia=Integer.parseInt(mensaje.substring(2,cadena.length()));
+            mensaje = miBundle.getString("resultado");
+
+            //generado = savedInstanceState.getString("generado");
+            //cadena = mensaje;
+            if(mensaje.contains("G0")){
+                System.out.println("YEAAHHHHHH "+ mensaje.substring(2,mensaje.length()));
+                puntajeGeografia=Integer.parseInt(mensaje.substring(2,mensaje.length()));
                 puntajes.add(puntajeGeografia);
             }
-            if(cadena.contains("R0")){
-                puntajeRecorrido=Integer.parseInt(mensaje.substring(2,cadena.length()));
+            if(mensaje.contains("R0")){
+                puntajeRecorrido=Integer.parseInt(mensaje.substring(2,mensaje.length()));
                 puntajes.add(puntajeRecorrido);
             }
-            if(cadena.contains("M0")){
-                puntajeMitologia=Integer.parseInt(mensaje.substring(2,cadena.length()));
+            if(mensaje.contains("M0")){
+                puntajeMitologia=Integer.parseInt(mensaje.substring(2,mensaje.length()));
                 puntajes.add(puntajeMitologia);
             }
-            if(cadena.contains("C0")){
-                puntajeCostumbres=Integer.parseInt(mensaje.substring(2,cadena.length()));
+            if(mensaje.contains("C0")){
+                puntajeCostumbres=Integer.parseInt(mensaje.substring(2,mensaje.length()));
                 puntajes.add(puntajeCostumbres);
-            }*/
+            }
         }
         else {
-            cadena = "no recibi nada";
+            mensaje = "no recibi nada";
         }
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        outState.putString("resultado", mensaje);
+        super.onSaveInstanceState(outState);
     }
 
     public void onclickGeografia(View view){
@@ -92,17 +101,16 @@ public class MainActivity extends AppCompatActivity {
         if(puntajes.size()>0){
             retenerMensaje = puntajes.get(0);
         }
-        String cadena = Integer.toString(retenerMensaje);
+        //String cadena = Integer.toString(retenerMensaje);
 
         Intent intent = new Intent(this, interfaz_progreso.class);
         float promedio = (puntajeGeografia+puntajeRecorrido+puntajeMitologia+puntajeCostumbres)/4;
         Bundle miBundle2 = new Bundle();
         miBundle2.putString("resultado", "Geografía y politica: "+puntajeGeografia+
-                                        "\nRecorrido Sagrado: "+puntajeRecorrido+
-                                        "\nMitología: "+puntajeMitologia+
-                                        "\nCostumbres: "+puntajeCostumbres+
-                                        "\n\nPromedio: "+promedio+
-                                        "\nMensaje: "+cadena);
+                "\nRecorrido Sagrado: "+puntajeRecorrido+
+                "\nMitología: "+puntajeMitologia+
+                "\nCostumbres: "+puntajeCostumbres+
+                "\n\nPromedio: "+promedio;
         intent.putExtras(miBundle2);
         startActivity(intent);
     }
@@ -114,5 +122,5 @@ public class MainActivity extends AppCompatActivity {
         intent.addCategory(Intent.CATEGORY_HOME);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
-        }
+    }
 }

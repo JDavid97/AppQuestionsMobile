@@ -7,6 +7,16 @@
     android:background="#B5FCF1"
     tools:context=".interfazTextoMuisca">
 
+    <TextView
+        android:id="@+id/tfScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <Button
         android:id="@+id/botonAnterior"
         android:layout_width="wrap_content"

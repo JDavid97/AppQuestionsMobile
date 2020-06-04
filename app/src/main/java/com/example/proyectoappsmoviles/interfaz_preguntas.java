@@ -12,12 +12,6 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
-
-        /*Puntaje puntajeTema1 = new Puntaje(geografiaypolitica,puntaje[0],
-                Integer.parseInt(phone.getText().toString()));
-          ContactoDAO contactoDAO = new ContactoDAO(getContext());
-          contactoDAO.insertarContacto(contacto);*/
-
 public class interfaz_preguntas extends AppCompatActivity {
 
     public int id_opciones[] = {R.id.opcion1, R.id.opcion2, R.id.opcion3, R.id.opcion4};
@@ -36,12 +30,7 @@ public class interfaz_preguntas extends AppCompatActivity {
     int correctaTerceraCostumbres = id_opciones[2]; //C
 
     int puntajeGeografia = 100;
-    int puntajeRecorrido = 100;
-    int puntajeMitologia = 100;
-    int puntajeCostumbres = 100;
-    int puntajeGeografiaAux=0;
 
-    int[] puntajeGeoAux = new int[2];
     int puntajeAux = 0;
 
     ArrayList<Integer> puntajes = new ArrayList<>();

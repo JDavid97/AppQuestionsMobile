@@ -6,14 +6,14 @@ public class Puntaje {
 
     public Puntaje(String tema, int puntaje) {
         this.tema = tema;
-        this puntaje = puntaje;
+        this.puntaje = puntaje;
     }
 
     public String getTema() {
         return tema;
     }
 
-    public String setTema(String tema) {
+    public void setTema(String tema) {
         this.tema = tema;
     }
 
@@ -21,7 +21,7 @@ public class Puntaje {
         return puntaje;
     }
 
-    public String setPuntaje(int puntaje) {
+    public void setPuntaje(int puntaje) {
         this.puntaje = puntaje;
     }
 }

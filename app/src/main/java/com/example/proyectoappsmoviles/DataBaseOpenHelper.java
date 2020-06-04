@@ -17,8 +17,10 @@ public class DataBaseOpenHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(UtilitiesDataBase.TablaPuntaje.CREATE_TABLE_PUNTAJES);
 
-        insert(db,"Paola",0);
-        insert(db, "Claudia", 0);
+        insert(db,"geografiaypolitica",0);
+        insert(db, "recorrido", 0);
+        insert(db,"mitologia",0);
+        insert(db, "costumbres", 0);
     }
 
     private void insert(SQLiteDatabase db, String tema, int puntaje){

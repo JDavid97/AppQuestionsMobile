@@ -12,6 +12,12 @@ import android.widget.Toast;
 
 import java.util.ArrayList;
 
+
+        /*Puntaje puntajeTema1 = new Puntaje(geografiaypolitica,puntaje[0],
+                Integer.parseInt(phone.getText().toString()));
+          ContactoDAO contactoDAO = new ContactoDAO(getContext());
+          contactoDAO.insertarContacto(contacto);*/
+
 public class interfaz_preguntas extends AppCompatActivity {
 
     public int id_opciones[] = {R.id.opcion1, R.id.opcion2, R.id.opcion3, R.id.opcion4};

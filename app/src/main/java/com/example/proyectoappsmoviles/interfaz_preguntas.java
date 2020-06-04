@@ -10,12 +10,35 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.ArrayList;
+
 public class interfaz_preguntas extends AppCompatActivity {
 
     public int id_opciones[] = {R.id.opcion1, R.id.opcion2, R.id.opcion3, R.id.opcion4};
 
-    int correctaPrimeraGeografia = id_opciones[1]; //B Respuesta conrrecta a la primer pregunta de geografía
+    int correctaPrimeraGeografia = id_opciones[2]; //C Respuesta correcta a la primer pregunta de geografía
     int correctaSegundaGeografia = id_opciones[0]; //A
+    int correctaTerceraGeografia = id_opciones[0]; //A
+    int correctaPrimeraRecorrido = id_opciones[0]; //A
+    int correctaSegundaRecorrido = id_opciones[2]; //C
+    int correctaTerceraRecorrido = id_opciones[2]; //C
+    int correctaPrimeraMitologia = id_opciones[1]; //B
+    int correctaSegundaMitologia = id_opciones[0]; //A
+    int correctaTerceraMitologia = id_opciones[2]; //C
+    int correctaPrimeraCostumbres = id_opciones[0]; //A
+    int correctaSegundaCostumbres = id_opciones[0]; //A
+    int correctaTerceraCostumbres = id_opciones[2]; //C
+
+    int puntajeGeografia = 100;
+    int puntajeRecorrido = 100;
+    int puntajeMitologia = 100;
+    int puntajeCostumbres = 100;
+    int puntajeGeografiaAux=0;
+
+    int[] puntajeGeoAux = new int[2];
+    int puntajeAux = 0;
+
+    ArrayList<Integer> puntajes = new ArrayList<>();
 
     String mensajeEnviar = "";
     @Override
@@ -59,7 +82,7 @@ public class interfaz_preguntas extends AppCompatActivity {
         if (miBundle != null) {
             String mensaje = miBundle.getString("resultado");
             mensajeEnviar = mensaje;
-            if(mensaje.equals("G3")){
+            if(mensaje.contains("G3")){
                 tfPregunta.setText(preguntasGeografia[0]);
 
                 for(int i=0; i<opcionesPrimerPreguntaGeografia.length; i++){
@@ -67,7 +90,7 @@ public class interfaz_preguntas extends AppCompatActivity {
                     rb.setText(opcionesPrimerPreguntaGeografia[i]);
                 }
             }
-            if(mensaje.equals("G7")){
+            if(mensaje.contains("G7")){
                 tfPregunta.setText(preguntasGeografia[1]);
 
                 for(int i=0; i<opcionesSegundaPreguntaGeografia.length; i++){
@@ -75,7 +98,7 @@ public class interfaz_preguntas extends AppCompatActivity {
                     rb.setText(opcionesSegundaPreguntaGeografia[i]);
                 }
             }
-            if(mensaje.equals("G0")){
+            if(mensaje.contains("G0")){
                 tfPregunta.setText(preguntasGeografia[2]);
 
                 for(int i=0; i<opcionesTerceraPreguntaGeografia.length; i++){
@@ -83,7 +106,7 @@ public class interfaz_preguntas extends AppCompatActivity {
                     rb.setText(opcionesTerceraPreguntaGeografia[i]);
                 }
             }
-            if(mensaje.equals("R3")){
+            if(mensaje.contains("R3")){
                 tfPregunta.setText(preguntasRecorridoSagrado[0]);
 
                 for(int i=0; i<opcionesPrimerPreguntaRecorridoSagrado.length; i++){
@@ -91,7 +114,7 @@ public class interfaz_preguntas extends AppCompatActivity {
                     rb.setText(opcionesPrimerPreguntaRecorridoSagrado[i]);
                 }
             }
-            if(mensaje.equals("R7")){
+            if(mensaje.contains("R7")){
                 tfPregunta.setText(preguntasRecorridoSagrado[1]);
 
                 for(int i=0; i<opcionesSegundaPreguntaRecorridoSagrado.length; i++){
@@ -99,7 +122,7 @@ public class interfaz_preguntas extends AppCompatActivity {
                     rb.setText(opcionesSegundaPreguntaRecorridoSagrado[i]);
                 }
             }
-            if(mensaje.equals("R0")){
+            if(mensaje.contains("R0")){
                 tfPregunta.setText(preguntasRecorridoSagrado[2]);
 
                 for(int i=0; i<opcionesTerceraPreguntaRecorridoSagrado.length; i++){
@@ -107,7 +130,7 @@ public class interfaz_preguntas extends AppCompatActivity {
                     rb.setText(opcionesTerceraPreguntaRecorridoSagrado[i]);
                 }
             }
-            if(mensaje.equals("M3")){
+            if(mensaje.contains("M3")){
                 tfPregunta.setText(preguntasMitologia[0]);
 
                 for(int i=0; i<opcionesPrimerPreguntaMitologia.length; i++){
@@ -115,7 +138,7 @@ public class interfaz_preguntas extends AppCompatActivity {
                     rb.setText(opcionesPrimerPreguntaMitologia[i]);
                 }
             }
-            if(mensaje.equals("M7")){
+            if(mensaje.contains("M7")){
                 tfPregunta.setText(preguntasMitologia[1]);
 
                 for(int i=0; i<opcionesSegundaPreguntaMitologia.length; i++){
@@ -123,7 +146,7 @@ public class interfaz_preguntas extends AppCompatActivity {
                     rb.setText(opcionesSegundaPreguntaMitologia[i]);
                 }
             }
-            if(mensaje.equals("M0")){
+            if(mensaje.contains("M0")){
                 tfPregunta.setText(preguntasMitologia[2]);
 
                 for(int i=0; i<opcionesTerceraPreguntaMitologia.length; i++){
@@ -131,7 +154,7 @@ public class interfaz_preguntas extends AppCompatActivity {
                     rb.setText(opcionesTerceraPreguntaMitologia[i]);
                 }
             }
-            if(mensaje.equals("C3")){
+            if(mensaje.contains("C3")){
                 tfPregunta.setText(preguntasCostumbres[0]);
 
                 for(int i=0; i<opcionesPrimerPreguntaCostumbres.length; i++){
@@ -139,7 +162,7 @@ public class interfaz_preguntas extends AppCompatActivity {
                     rb.setText(opcionesPrimerPreguntaCostumbres[i]);
                 }
             }
-            if(mensaje.equals("C7")){
+            if(mensaje.contains("C7")){
                 tfPregunta.setText(preguntasCostumbres[1]);
 
                 for(int i=0; i<opcionesSegundaPreguntaCostumbres.length; i++){
@@ -147,7 +170,7 @@ public class interfaz_preguntas extends AppCompatActivity {
                     rb.setText(opcionesSegundaPreguntaCostumbres[i]);
                 }
             }
-            if(mensaje.equals("C0")){
+            if(mensaje.contains("C0")){
                 tfPregunta.setText(preguntasCostumbres[2]);
 
                 for(int i=0; i<opcionesTerceraPreguntaCostumbres.length; i++){
@@ -161,6 +184,14 @@ public class interfaz_preguntas extends AppCompatActivity {
     public void enviarRespuesta(View view){
 
         RadioGroup rgOpciones = (RadioGroup) findViewById(R.id.radioGroup);
+        Bundle miBundle2 = this.getIntent().getExtras();
+        String mensaje = miBundle2.getString("resultado");
+        //mensajeEnviar = mensaje;
+        puntajes.add(0);
+        puntajes.add(0);
+        puntajes.add(0);
+        puntajes.add(0);
+
 
         //Si no elige ninguna opción
         if(rgOpciones.getCheckedRadioButtonId() == -1){
@@ -169,22 +200,238 @@ public class interfaz_preguntas extends AppCompatActivity {
         }
 
         else{
+
             int id = rgOpciones.getCheckedRadioButtonId();
+            if(mensaje.contains("G3")){
 
-            if(id == correctaPrimeraGeografia) {
-                Toast toast2 = Toast.makeText(getApplicationContext(), "Respuesta correcta", Toast.LENGTH_SHORT);
-                toast2.show();
+                if(id == correctaPrimeraGeografia) {
+                    Toast toast2 = Toast.makeText(getApplicationContext(), "Respuesta correcta", Toast.LENGTH_SHORT);
+                    toast2.show();
 
-                Intent despuesDePregunta = new Intent(this, interfazTextoMuisca.class);
+                    System.out.println("asd: "+puntajeGeografia);
+                    Intent despuesDePregunta = new Intent(this, interfazTextoMuisca.class);
 
-                Bundle miBundle = new Bundle();
-                miBundle.putString("resultado", mensajeEnviar);
-                despuesDePregunta.putExtras(miBundle);
-                startActivity(despuesDePregunta);
+                    Bundle miBundle = new Bundle();
+                    miBundle.putString("resultado", mensajeEnviar+puntajeAux);
+                    despuesDePregunta.putExtras(miBundle);
+                    startActivity(despuesDePregunta);
+                }
+                else{
+                    puntajeAux++;
+                    System.out.println("El puntaje: "+puntajeAux*10);
+                    Toast toast3 = Toast.makeText(getApplicationContext(), "-10", Toast.LENGTH_SHORT);
+                    toast3.show();
+                }
             }
-            else{
-                Toast toast3 = Toast.makeText(getApplicationContext(), "Incorrecto ", Toast.LENGTH_SHORT);
-                toast3.show();
+            if(mensaje.contains("G7")){
+                System.out.println("PRUEBA1: "+mensaje);
+                if(id == correctaSegundaGeografia) {
+                    Toast toast2 = Toast.makeText(getApplicationContext(), "Respuesta correcta", Toast.LENGTH_SHORT);
+                    toast2.show();
+
+                    System.out.println("asd: "+mensajeEnviar+" "+puntajeGeografia);
+                    Intent despuesDePregunta = new Intent(this, interfazTextoMuisca.class);
+
+                    Bundle miBundle = new Bundle();
+                    miBundle.putString("resultado", mensajeEnviar+puntajeAux);
+                    despuesDePregunta.putExtras(miBundle);
+                    startActivity(despuesDePregunta);
+                }
+                else{
+                    puntajeAux++;
+                    System.out.println("El puntaje: "+puntajeAux*10);
+                    Toast toast3 = Toast.makeText(getApplicationContext(), "-10", Toast.LENGTH_SHORT);
+                    toast3.show();
+                }
+            }
+            if(mensaje.contains("G0")){
+                System.out.println("PRUEBA2: "+mensaje);
+                if(id == correctaTerceraGeografia) {
+                    Toast toast2 = Toast.makeText(getApplicationContext(), "Respuesta correcta", Toast.LENGTH_SHORT);
+                    toast2.show();
+
+
+                    Intent despuesDePregunta = new Intent(this, interfazTextoMuisca.class);
+
+                    Bundle miBundle = new Bundle();
+                    miBundle.putString("resultado", mensajeEnviar+puntajeAux);
+                    despuesDePregunta.putExtras(miBundle);
+                    startActivity(despuesDePregunta);
+
+                    /*Intent finGeografia = new Intent(this, MainActivity.class);
+                    Bundle miBundle = new Bundle();
+                    miBundle.putString("resultado", mensajeEnviar+puntajeGeografia);
+                    finGeografia.putExtras(miBundle);
+                    startActivity(finGeografia);*/
+                }
+                else{
+                    puntajeAux++;
+                    System.out.println("El puntaje: "+puntajeAux);
+                    Toast toast3 = Toast.makeText(getApplicationContext(), "-10", Toast.LENGTH_SHORT);
+                    toast3.show();
+                }
+            }
+            if(mensaje.contains("R3")){
+                if(id == correctaPrimeraRecorrido){
+                    Toast toast2 = Toast.makeText(getApplicationContext(), "Respuesta correcta", Toast.LENGTH_SHORT);
+                    toast2.show();
+
+                    Intent despuesDePregunta = new Intent(this, interfazTextoMuisca.class);
+
+                    Bundle miBundle = new Bundle();
+                    miBundle.putString("resultado", mensajeEnviar+puntajeAux);
+                    despuesDePregunta.putExtras(miBundle);
+                    startActivity(despuesDePregunta);
+                }
+                else{
+                    puntajeAux++;
+                    Toast toast3 = Toast.makeText(getApplicationContext(), "Incorrecto", Toast.LENGTH_SHORT);
+                    toast3.show();
+                }
+            }
+            if(mensaje.contains("R7")){
+                if(id == correctaSegundaRecorrido) {
+                    Toast toast2 = Toast.makeText(getApplicationContext(), "Respuesta correcta", Toast.LENGTH_SHORT);
+                    toast2.show();
+
+                    Intent despuesDePregunta = new Intent(this, interfazTextoMuisca.class);
+
+                    Bundle miBundle = new Bundle();
+                    miBundle.putString("resultado", mensajeEnviar+puntajeAux);
+                    despuesDePregunta.putExtras(miBundle);
+                    startActivity(despuesDePregunta);
+                }
+                else{
+                    puntajeAux++;
+                    Toast toast3 = Toast.makeText(getApplicationContext(), "Incorrecto", Toast.LENGTH_SHORT);
+                    toast3.show();
+                }
+            }
+            if(mensaje.contains("R0")){
+                if(id == correctaTerceraRecorrido) {
+                    Toast toast2 = Toast.makeText(getApplicationContext(), "Respuesta correcta", Toast.LENGTH_SHORT);
+                    toast2.show();
+
+                    Intent despuesDePregunta = new Intent(this, interfazTextoMuisca.class);
+
+                    Bundle miBundle = new Bundle();
+                    miBundle.putString("resultado", mensajeEnviar+puntajeAux);
+                    despuesDePregunta.putExtras(miBundle);
+                    startActivity(despuesDePregunta);
+                }
+                else{
+                    puntajeAux++;
+                    Toast toast3 = Toast.makeText(getApplicationContext(), "Incorrecto", Toast.LENGTH_SHORT);
+                    toast3.show();
+                }
+            }
+            if(mensaje.contains("M3")){
+                if(id == correctaPrimeraMitologia) {
+                    Toast toast2 = Toast.makeText(getApplicationContext(), "Respuesta correcta", Toast.LENGTH_SHORT);
+                    toast2.show();
+
+                    Intent despuesDePregunta = new Intent(this, interfazTextoMuisca.class);
+
+                    Bundle miBundle = new Bundle();
+                    miBundle.putString("resultado", mensajeEnviar+puntajeAux);
+                    despuesDePregunta.putExtras(miBundle);
+                    startActivity(despuesDePregunta);
+                }
+                else{
+                    Toast toast3 = Toast.makeText(getApplicationContext(), "Incorrecto", Toast.LENGTH_SHORT);
+                    toast3.show();
+                    puntajeAux++;
+                }
+            }
+            if(mensaje.contains("M7")){
+                if(id == correctaSegundaMitologia) {
+                    Toast toast2 = Toast.makeText(getApplicationContext(), "Respuesta correcta", Toast.LENGTH_SHORT);
+                    toast2.show();
+
+                    Intent despuesDePregunta = new Intent(this, interfazTextoMuisca.class);
+
+                    Bundle miBundle = new Bundle();
+                    miBundle.putString("resultado", mensajeEnviar+puntajeAux);
+                    despuesDePregunta.putExtras(miBundle);
+                    startActivity(despuesDePregunta);
+                }
+                else{
+                    Toast toast3 = Toast.makeText(getApplicationContext(), "Incorrecto", Toast.LENGTH_SHORT);
+                    toast3.show();
+                    puntajeAux++;
+                }
+            }
+            if(mensaje.contains("M0")){
+                if(id == correctaTerceraMitologia) {
+                    Toast toast2 = Toast.makeText(getApplicationContext(), "Respuesta correcta", Toast.LENGTH_SHORT);
+                    toast2.show();
+
+                    Intent despuesDePregunta = new Intent(this, interfazTextoMuisca.class);
+
+                    Bundle miBundle = new Bundle();
+                    miBundle.putString("resultado", mensajeEnviar+puntajeAux);
+                    despuesDePregunta.putExtras(miBundle);
+                    startActivity(despuesDePregunta);
+                }
+                else{
+                    Toast toast3 = Toast.makeText(getApplicationContext(), "Incorrecto", Toast.LENGTH_SHORT);
+                    toast3.show();
+                    puntajeAux++;
+                }
+            }
+            if(mensaje.contains("C3")){
+                if(id == correctaPrimeraCostumbres) {
+                    Toast toast2 = Toast.makeText(getApplicationContext(), "Respuesta correcta", Toast.LENGTH_SHORT);
+                    toast2.show();
+
+                    Intent despuesDePregunta = new Intent(this, interfazTextoMuisca.class);
+
+                    Bundle miBundle = new Bundle();
+                    miBundle.putString("resultado", mensajeEnviar+puntajeAux);
+                    despuesDePregunta.putExtras(miBundle);
+                    startActivity(despuesDePregunta);
+                }
+                else{
+                    Toast toast3 = Toast.makeText(getApplicationContext(), "Incorrecto", Toast.LENGTH_SHORT);
+                    toast3.show();
+                    puntajeAux++;
+                }
+            }
+            if(mensaje.contains("C7")){
+                if(id == correctaSegundaCostumbres) {
+                    Toast toast2 = Toast.makeText(getApplicationContext(), "Respuesta correcta", Toast.LENGTH_SHORT);
+                    toast2.show();
+
+                    Intent despuesDePregunta = new Intent(this, interfazTextoMuisca.class);
+
+                    Bundle miBundle = new Bundle();
+                    miBundle.putString("resultado", mensajeEnviar+puntajeAux);
+                    despuesDePregunta.putExtras(miBundle);
+                    startActivity(despuesDePregunta);
+                }
+                else{
+                    Toast toast3 = Toast.makeText(getApplicationContext(), "Incorrecto", Toast.LENGTH_SHORT);
+                    toast3.show();
+                    puntajeAux++;
+                }
+            }
+            if(mensaje.contains("C0")){
+                if(id == correctaTerceraCostumbres) {
+                    Toast toast2 = Toast.makeText(getApplicationContext(), "Respuesta correcta", Toast.LENGTH_SHORT);
+                    toast2.show();
+
+                    Intent despuesDePregunta = new Intent(this, interfazTextoMuisca.class);
+
+                    Bundle miBundle = new Bundle();
+                    miBundle.putString("resultado", mensajeEnviar+puntajeAux);
+                    despuesDePregunta.putExtras(miBundle);
+                    startActivity(despuesDePregunta);
+                }
+                else{
+                    Toast toast3 = Toast.makeText(getApplicationContext(), "Incorrecto", Toast.LENGTH_SHORT);
+                    toast3.show();
+                    puntajeAux++;
+                }
             }
         }
     }

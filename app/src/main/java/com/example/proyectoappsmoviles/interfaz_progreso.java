@@ -21,7 +21,7 @@ public class interfaz_progreso extends AppCompatActivity {
 
         if(miBundle!=null){
             String mensaje = miBundle.getString("resultado");
-            textoProgreso.setText("Estoy en: "+mensaje);
+            textoProgreso.setText(mensaje);
         }
         else {
             textoProgreso.setText("Mensaje vacío");

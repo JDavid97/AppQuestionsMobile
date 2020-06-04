@@ -13,63 +13,266 @@
     <string name="tfInterfazGeografia">Geografia y Politica</string>
 
     <array name="textoGeografia">
-        <item>1 PRIMER TEXTO DEL TEMA GEOGRAFIA</item>
-        <item>2 SEGUNDO TEXTO DEL TEMA GEOGRAFIA</item>
-        <item>3 TERCER TEXTO DEL TEMA GEOGRAFIA</item>
+        <item>En la Confederación Muisca, buena parte del territorio y la población
+            se hallaba centralizada en dos grandes unidades políticas: el Zipazgo,
+            cuyo soberano era el Zipa, y el Zacazgo, cuyo soberano era el Zaque. </item>
+        <item>La Confederación Muisca fue el tipo de organización político-administrativa
+            que agrupó a los muiscas en el territorio central de la actual República de
+            Colombia antes de la invasión española. </item>
+        <item>Las cuatro unidades político-territoriales confederadas fueron:
+            el Zipazgo de Bacatá, el Zacazgo de Hunza, el territorio sagrado
+            de Iraca y el territorio sagrado de Tundama (además de un grupo
+            de territorios autónomos).</item>
         <item></item>
-        <item>4 CUARTO TEXTO DEL TEMA GEOGRAFIA</item>
-        <item>5 QUINTO TEXTO DEL TEMA GEOGRAFIA</item>
-        <item>6 SEXTO TEXTO DEL TEMA GEOGRAFIA</item>
+        <item>A la llegada de los españoles en el territorio muisca existían 5
+            federaciones independientes, formadas por 25 tribus. Cada federación
+            tenía su gobierno independiente, así como, una jurisdicción
+            territorial sobre una serie de poblados que les pagaban tributo.</item>
+        <item>La cultura muisca era un estado en formación. Contaba con
+            una clase gobernante principal, secundada por otra menor,
+            que regia unidades administrativas más pequeñas
+            (capitanías o parcialidades).</item>
+        <item>Social y económicamente, entre los Muiscas existieron seis
+            clases o estamentos, así: los sacerdotes o jeques, la nobleza
+            guerrera o los guechas y los pregoneros o aquellos funcionarios
+            que hacían conocer la voluntad del cacique. También estaban
+            los comerciantes, los artesanos y los agricultores, que se
+            regían por un orden jurídico rígido. También sobresalieron
+            los mineros en especial los que trabajaban en las minas de
+            sal y esmeraldas y por último, los esclavos que, generalmente,
+            eran prisioneros de guerra y a veces servían para los sacrificios
+            religiosos.</item>
         <item></item>
-        <item>7 SEPTIMO TEXTO DEL TEMA GEOGRAFIA</item>
-        <item>8 OCTAVO TEXTO DEL TEMA GEOGRAFIA</item>
-        <item>9 NOVENO TEXTO DEL TEMA GEOGRAFIA</item>
+        <item>El territorio ocupado por los Muiscas en el momento
+            de la conquista española era el actual Altiplano
+            Cundiboyacense, que se extiende sobre la cordillera
+            oriental colombiana a unos 2500 metros sobre el
+            nivel del mar, como altura promedio.</item>
+        <item>Históricamente hablando, la ubicación de los muiscas
+            se remonta a la primera oleada de pueblos asiáticos
+            que cruzaron el océano Pacifico, llegando a Centroamérica.
+            Posteriormente, cruzando el istmo de Panamá, lograron
+            entrar al territorio colombiano por la región del Darién,
+            una zona selvática, pantanosa y de difícil acceso, que
+            limita con los actuales departamentos colombianos del
+            Chocó y Antioquía.</item>
+        <item>Continuando la idea anterior, la ubicación de los muiscas
+            se dio específicamente en el altiplano cundiboyacense,
+            entre los departamentos de Cundinamarca y Boyacá, cubriendo
+            las regiones de la sabana de Bogotá y los valles de Ubaté,
+            Chiquinquirá, Tunja, Duitama y Sogamoso.</item>
         <item></item>
 
     </array>
 
     <array name="textoRecorridoSagrado">
-        <item>1 PRIMER TEXTO DEL TEMA RECORRIDO SAGRADO</item>
-        <item>2 SEGUNDO TEXTO DEL TEMA RECORRIDO SAGRADO</item>
-        <item>3 TERCER TEXTO DEL TEMA RECORRIDO SAGRADO</item>
+        <item>Las lagunas fueron sagradas para los Muiscas por el culto
+            que le rendían al agua como el origen de la vida.
+            También hay que tener en cuenta que muchas de las más
+            de trescientas lagunas que existen en toda la sabana
+            tienen su propia historia, como lo es la de Iguaque de
+            donde salió la diosa "Bachué", Siecha donde habitaba la
+            diosa "Sie", Guatavita donde se hacían rituales de coronación
+            de caciques y muchas más.</item>
+        <item>En el territorio de los Zipas se realizaba todos los años
+            un ritual que se llamaba "Correr la Tierra", que era toda
+            una peregrinación para los pueblos y a la vez una competencia
+            para los jóvenes y que consistía en recorrer cinco lagunas
+            de la región y rendirles culto, cosa que lo hacían durante
+            varios días.</item>
+        <item>Los Muiscas tenían una red de 5 lagunas donde los
+            indígenas iban a orar, ofrendar y hacer rituales
+            en agradecimiento o petición a sus deidades.</item>
         <item></item>
-        <item>4 CUARTO TEXTO DEL TEMA RECORRIDO SAGRADO</item>
-        <item>5 QUINTO TEXTO DEL TEMA RECORRIDO SAGRADO</item>
-        <item>6 SEXTA TEXTO DEL TEMA RECORRIDO SAGRADO</item>
+        <item>Laguna de Guatavita
+
+            En esta laguna se da origen a la Leyenda
+            de El Dorado, en la que se cuenta
+            cómo un nuevo cacique entraba en una balsa
+            cubierto de polvo de oro, esperando el reflejo
+            del sol sobre su cuerpo. Se dice que los
+            habitantes tiraban al agua esmeraldas y oro,
+            para darle la bienvenida al nuevo cacique.</item>
+        <item>Laguna de Siecha:
+
+            En estas lagunas rendían culto a la fertilidad
+            y la vida, ya que dichos temas estaban relacionados
+            con el agua, como fuente creadora y dadora de vida.
+            Se cree que la leyenda original de El Dorado,
+            ocurrió en Siecha y no en Guatavita, igual hasta
+            el momento nadie ha podido encontrar el gran tesoro
+            que esconden estas aguas.</item>
+        <item>Laguna de Teusacá:
+
+            Actualmente se conoce como El Verjón, ubicada
+            dentro del Parque Ecológico Matarrendonda, allí
+            los indígenas hacian sus ofrendas a la madre tierra,
+            siempre dando las gracias a cada elemento de la
+            naturaleza, en especial el agua, quien para ellos
+            es su fuente de origen y sustento.</item>
         <item></item>
-        <item>7 SEPTIMO TEXTO DEL TEMA RECORRIDO SAGRADO</item>
-        <item>8 OCTAVO TEXTO DEL TEMA RECORRIDO SAGRADO</item>
-        <item>9 NOVENO TEXTO DEL TEMA RECORRIDO SAGRADO</item>
+        <item>Laguna de Guasca:
+
+            A diferencia de las otras lagunas que componen
+            la red de lugares sagrados para los Muiscas,
+            esta fuente ya no existe, o al menos no como se
+            conocía. Ahora es un pantano con cortos y pocos
+            cuerpos de agua, resultado de la intervención del
+            holandés Gonzalo Linnus Martos, quien explota minas,
+            al enterarse de los posibles tesoros que los
+            indígenas arrojaban al agua, decide secar la
+            laguna para buscar oro.</item>
+        <item>Laguna de Guasca:
+
+            A partir de ese momento el terreno quedó convertido
+            en un pantano que a pesar de todo sobrevivió y sigue
+            siendo un espacio rico en fauna y flora.
+            Por otro lado, además de perder su agua, también perdió
+            su nombre. Quienes visiten este lugar se encontrarán
+            con el Pantano de Martos.</item>
+        <item>Laguna de Ubaqué:
+
+            El último paradero de la ruta sagrada de los Muiscas.
+            Allí completaban su recorrido en el que pasaban por
+            las lagunas mencionadas, en las cuales se hacían cantos,
+            rituales y ofrendas. Actualmente sirve para descanso
+            y vivienda de muchos, convirtiendo a la laguna de Ubaqué
+            en un espacio para acampar.</item>
         <item></item>
     </array>
 
     <array name="textoMitología">
-        <item>1 PRIMER TEXTO DEL TEMA MITOLOGÍA</item>
-        <item>2 SEGUNDO TEXTO DEL TEMA MITOLOGÍA</item>
-        <item>3 TERCERO TEXTO DEL TEMA MITOLOGÍA</item>
+        <item>Mito de Bagüe o Bachue:
+
+            En el principio sólo existía Bague, la Madre Abuela.
+            Entonces Bague gritó, y aparecieron los dioses, la luz,
+            las plantas, los animales y los muiscas. Luego los dioses
+            llenaron una olla con semillas y piedras, y sembraron luceros
+            en el espacio. Tomaron las migajas que habían quedado en la
+            olla y las lanzaron muy lejos, y ese fue el origen de las estrellas.
+            Sin embargo, todo estaba quieto, nada se movía. Entonces los dioses
+            fueron a visitar a Bague, y le contaron su pesar porque nada se movía,
+            ni crecía, ni sonaba. </item>
+        <item>La Madre Abuela preparó una bebida que los dioses
+            tomaron hasta quedar dormidos, Comenzaron a soñar
+            y a tener visiones, y en sus sueños todo se movía,
+            las aves cantaban, las cascadas hacían ruido y los
+            hombres se afanaban, en sus labores cotidianas.
+            Cuando los dioses despertaron, la luz se esparció
+            por el universo, y todo tuvo movimiento, como en sus
+            sueños. </item>
+        <item>Mito de Chiminigagua:
+
+            Cuando ya era de noche, antes de que hubiera nada
+            en el mundo, estaba la luz metida en una cosa grande,
+            llamada Chiminigagua, de donde después salió. Chiminigagua
+            comenzó a salir y a mostrar la luz que en sí tenía.
+            Lo primero que creó fueron unas aves negras y grandes,
+            a las cuales mandó que fuesen por todo el mundo echando
+            aire por los picos. Y el aire que echaban era lúcido y
+            resplandeciente. Y luego que hubieron recorrido el mundo,
+            quedó todo claro e iluminado. Luego creó Chiminigagua
+            todas las otras cosas que hay en el mundo, y entre todas,
+            las más hermosas fueron el Sol y su esposa, la Luna.</item>
         <item></item>
-        <item>4 CUARTO TEXTO DEL TEMA MITOLOGÍA</item>
-        <item>5 QUINTO TEXTO DEL TEMA MITOLOGÍA</item>
-        <item>6 SEXTO TEXTO DEL TEMA MITOLOGÍA</item>
+        <item>Mito de Bochica:
+
+            Según este mito, desde los llanos del Oriente llegó
+            a la Sabana de Bogotá, hace mucho tiempo, un hombre
+            desconocido, de piel blanca y ojos azules, con el
+            cabello y la barba larga hasta la cintura, cogida la
+            cabellera con una cinta, con los pies descalzos, y
+            vistiendo una manta o túnica hasta las pantorrillas,
+            atada con un nudo sobre el hombro derecho.</item>
+        <item>Entró por el pueblo de Pasca, y de allí pasó a
+            Bosa, donde se le murió un camello que traía,
+            cuyos huesos conservaron los muiscas. Este hombre,
+            conocido como Bochica, recibió otros nombres,
+            como Chimizapagua (que quiere decir «mensajero de Chiminigagua»),
+            Nemqueteba, Xué, entre otros.</item>
+        <item>Bochica les enseñó a los muiscas a hilar algodón
+            y tejer mantas, pues antes de esto, se cubrían
+            con unas planchas burdas de algodón en rama,
+            atadas con cordezuelas de fique.</item>
         <item></item>
-        <item>7 SEPTIMO TEXTO DEL TEMA MITOLOGÍA</item>
-        <item>8 OCTAVO TEXTO DEL TEMA MITOLOGÍA</item>
-        <item>9 NOVENO TEXTO DEL TEMA MITOLOGÍA</item>
+        <item>Chía, o Chie:
+            La diosa Luna. Preside la noche. Simboliza el principio
+            que produce las pasiones humanas, los apetitos y los deseos.
+            A veces se la identifica con Huitaca, castigada por Bochica,
+            quien la transformó en lechuza, o en el mismo astro de la Luna.
+            Algunos autores la tienen incluso por esposa de Bochica.</item>
+        <item>Nencatacoa, o Fo:
+
+            Dios de la embriaguez, la irreverencia, la música y la danza.
+            Transforma las cosas con otras apariencias. Preside las borracheras,
+            protege a los tejedores y estampadores de telas. Suele manifestarse
+            a veces en forma de zorro, y por eso se le llama Fo.</item>
+        <item>Cuhuzafiba:
+
+            Conocido por lo españoles como Cuchaviva, es el dios
+            del arcoíris y de la medicina, mediador entre dioses
+            y hombres. A él lo invocaban los enfermos de fiebre y
+            las mujeres cuando entraban en labores de parto.</item>
         <item></item>
     </array>
 
     <array name="textoCostumbres">
-        <item>1 PRIMERA TEXTO DEL TEMA COSTUMBRES</item>
-        <item>2 SEGUNDA TEXTO DEL TEMA COSTUMBRES</item>
-        <item>3 TERCERA TEXTO DEL TEMA COSTUMBRES</item>
+        <item>Costumbres y modos de Vida: Agricultura
+
+            Uno de los elementos básicos en la alimentación de la población muisca
+            era el maíz con el que preparaban distintos alimentos, como por ejemplo
+            arepas, bollos de maíz, mazamorra y chicha.</item>
+        <item>Agricultura:
+
+            Las proteínas que consumían eran de origen animal y vegetal,
+            las proteínas vegetales la consumían del maní, la coca y los
+            frijoles y las proteínas animales las consumían del venado,
+            curí, aves, orugas, hormigas entre otras especies.</item>
+        <item>Agricultura:
+
+            Cabe resaltar que sus cultivos de maíz era cosechado una
+            vez año y que consumían también tubérculos y frutas
+            cosechados por ellos mismos.</item>
         <item></item>
-        <item>4 CUARTA TEXTO DEL TEMA COSTUMBRES</item>
-        <item>5 QUINTA TEXTO DEL TEMA COSTUMBRES</item>
-        <item>6 SEXTA TEXTO DEL TEMA COSTUMBRES</item>
+        <item>Vestimenta:
+
+            Los muiscas vestían por lo general con mantas hechas
+            de algodón las cuales cubrían todo su cuerpo, para
+            contra restar el frio de su territorio, ellos no usaban
+            calzado.</item>
+        <item>Vestimenta:
+
+            Según el clima utilizaban camisas con o sin mangas pero
+            siempre el vestuario era hasta por debajo de sus rodillas
+            y ruanas, que por lo general eran de color blanco, sin
+            embargo en cierto sector de su sociedad las usaban con
+            figuras de color rojo y negro.</item>
+        <item>Vestimenta:
+
+            Tanto los hombres como las mujeres, usaban aderezos en
+            sus cuerpos como lo son las manillas, estas eran hechas
+            con huesos de animales o semillas, las mujeres tendían
+            utilizar los cabellos largos, a los hombrees también se
+            les era permitido pero solo hasta los hombros.</item>
         <item></item>
-        <item>7 SEPTIMA TEXTO DEL TEMA COSTUMBRES</item>
-        <item>8 OCTAVA TEXTO DEL TEMA COSTUMBRES</item>
-        <item>9 NOVENA TEXTO DEL TEMA COSTUMBRES</item>
+        <item>Vestimenta e indumentaria según su actividad o estrato social:
+
+            Los güechas (guerreros), usaban cascos de oro, el pueblo
+            con gorros de algodón y ocasionalmente, en época de celebración,
+            usaban gorros de pieles de animales como osos y tigres.</item>
+        <item>Vestimenta e indumentaria según su actividad o estrato social:
+
+            La nobleza y familia de los gobernadores:
+            se distinguía por su manera de vestir ya que por lo general
+            se adornaban con plumas. En el caso de los hombres ellos llevaban
+            orejeras y narigueras de oro, brazaletes de oro con esmeraldas
+            y su cuerpo con pigmento rojo.</item>
+        <item>Vestimenta e indumentaria según su actividad o estrato social:
+
+            La nobleza y familia de los gobernadores:
+            Las mujeres usaban dos mantas; una larga y ceñida a la
+            cintura mediante faja, y la otra, pequeña, colgada sobre
+            sus hombros y sujetadas con alfileres de plata u oro.</item>
         <item></item>
     </array>
 
@@ -80,103 +283,108 @@
     <string name="botonAtras">Atras</string>
 
     <array name="preguntasGeografia">
-        <item>1 PRIMERA PREGUNTA GEOGRAFIA</item>
-        <item>2 SEGUNDA PREGUNTA GEOGRAFIA</item>
-        <item>3 TERCERA PREGUNTA GEOGRAFIA</item>
+        <item>Cuál era el nombre del soberano del Zacazgo?</item>
+        <item>A la llegada de los españoles, ¿Cuántas federaciones independientes habían en el territorio Muisca?</item>
+        <item>El territorio ocupado por los Muiscas al momento de la conquista española
+            era el actual Altiplano Cundiboyacense, que se extiende por una cordillera
+            ¿Cuál cordillera es?</item>
     </array>
 
     <array name="repuestasPrimeraPreguntaGeografia">
-        <item>Opcion1 pregunta1 Geografia</item>
-        <item>Opcion2 pregunta1 Geografia</item>
-        <item>Opcion3 pregunta1 Geografia</item>
-        <item>Opcion4 pregunta1 Geografia</item>
+        <item>Zipa</item>
+        <item>Muisca</item>
+        <item>Zaque</item>
+        <item>Hunza</item>
     </array>
     <array name="repuestasSegundaPreguntaGeografia">
-        <item>Opcion1 pregunta2 Geografia</item>
-        <item>Opcion2 pregunta2 Geografia</item>
-        <item>Opcion3 pregunta2 Geografia</item>
-        <item>Opcion4 pregunta2 Geografia</item>
+        <item>5 (Cinco)</item>
+        <item>2 (Dos)</item>
+        <item>25 (Veinticinco)</item>
+        <item>1 (Uno)</item>
     </array>
     <array name="repuestasTerceraPreguntaGeografia">
-        <item>Opcion1 pregunta3 Geografia</item>
-        <item>Opcion2 pregunta3 Geografia</item>
-        <item>Opcion3 pregunta3 Geografia</item>
-        <item>Opcion4 pregunta3 Geografia</item>
+        <item>Cordillera Oriental</item>
+        <item>Cordillera Central</item>
+        <item>Cordillera Occidental</item>
+        <item>Todas la anteriores</item>
     </array>
 
     <array name="preguntasRecorridoSagrado">
-        <item>1 PRIMERA PREGUNTA RECORRIDO SAGRADO</item>
-        <item>2 SEGUNDA PREGUNTA RECORRIDO SAGRADO</item>
-        <item>3 TERCERA PREGUNTA RECORRIDO SAGRADO</item>
+        <item>En el territorio de los Zipas se realizaba todos los años
+            un ritual que se llamaba "Correr la Tierra", que era toda
+            una peregrinación para los pueblos y a la vez una competencia
+            para los jóvenes ¿En qué consistía?</item>
+        <item>¿En cuál laguna se da origen a la Leyenda de El Dorado?</item>
+        <item>¿Cuál es el último paradero de la ruta sagrada de los Muiscas?</item>
     </array>
 
     <array name="repuestasPrimeraPreguntaRecorridoSagrado">
-        <item>Opcion1 pregunta1 RECORRIDO SAGRADO</item>
-        <item>Opcion2 pregunta1 RECORRIDO SAGRADO</item>
-        <item>Opcion3 pregunta1 RECORRIDO SAGRADO</item>
-        <item>Opcion4 pregunta1 RECORRIDO SAGRADO</item>
+        <item>Recorrer cinco lagunas de la región y rendirles culto</item>
+        <item>Tirar al agua esmeraldas y oro</item>
+        <item>Hacer cantos y dar ofrendas alrededor de las lagunas</item>
     </array>
     <array name="repuestasSegundaPreguntaRecorridoSagrado">
-        <item>Opcion1 pregunta2 RECORRIDO SAGRADO</item>
-        <item>Opcion2 pregunta2 RECORRIDO SAGRADO</item>
-        <item>Opcion3 pregunta2 RECORRIDO SAGRADO</item>
-        <item>Opcion4 pregunta2 RECORRIDO SAGRADO</item>
+        <item>Laguna de Siecha</item>
+        <item>Laguna de Teusacá</item>
+        <item>Laguna de Guatavita</item>
+        <item>Laguna de Guatavita</item>
     </array>
     <array name="repuestasTerceraPreguntaRecorridoSagrado">
-        <item>Opcion1 pregunta3 RECORRIDO SAGRADO</item>
-        <item>Opcion2 pregunta3 RECORRIDO SAGRADO</item>
-        <item>Opcion3 pregunta3 RECORRIDO SAGRADO</item>
-        <item>Opcion4 pregunta3 RECORRIDO SAGRADO</item>
+        <item>Laguna de Ubaqué</item>
+        <item>Laguna de Siecha</item>
+        <item>Pantano de Martos</item>
+        <item>Laguna de Guasca</item>
     </array>
 
     <array name="preguntasMitologia">
-        <item>1 PRIMERA PREGUNTA MITOLOGIA</item>
-        <item>2 SEGUNDA PREGUNTA MITOLOGIA</item>
-        <item>3 TERCERA PREGUNTA MITOLOGIA</item>
+        <item>¿Cuáles creían los Muiscas que eran las creaciones de Chiminigagua?</item>
+        <item>A Bochica se le murió un animal en Bosa, cuyo huesos conservaron los Muiscas
+            ¿Qué animal era este?</item>
+        <item>¿Quién era la diosa Chía o Chie?</item>
     </array>
 
     <array name="repuestasPrimeraPreguntaMitologia">
-        <item>Opcion1 pregunta1 MITOLOGIA</item>
-        <item>Opcion2 pregunta1 MITOLOGIA</item>
-        <item>Opcion3 pregunta1 MITOLOGIA</item>
-        <item>Opcion4 pregunta1 MITOLOGIA</item>
+        <item>El agua y el fuego</item>
+        <item>El sol y su esposa, la luna</item>//correcta
+        <item>El día y la noche</item>
+        <item>El dia y el fuego</item>
     </array>
     <array name="repuestasSegundaPreguntaMitologia">
-        <item>Opcion1 pregunta2 MITOLOGIA</item>
-        <item>Opcion2 pregunta2 MITOLOGIA</item>
-        <item>Opcion3 pregunta2 MITOLOGIA</item>
-        <item>Opcion4 pregunta2 MITOLOGIA</item>
+        <item>Camello</item>//correcta
+        <item>Caballo</item>
+        <item>Llama</item>
+        <item>Pajaro</item>
     </array>
     <array name="repuestasTerceraPreguntaMitologia">
-        <item>Opcion1 pregunta3 MITOLOGIA</item>
-        <item>Opcion2 pregunta3 MITOLOGIA</item>
-        <item>Opcion3 pregunta3 MITOLOGIA</item>
-        <item>Opcion4 pregunta3 MITOLOGIA</item>
+        <item>Diosa del Sol</item>
+        <item>Diosa del Agua</item>
+        <item>Diosa de la Luna</item>//correcta
+        <item>Diosa del fuego</item>
     </array>
 
 
     <array name="preguntasCostumbres">
-        <item>1 PRIMERA PREGUNTA COSTUMBRES</item>
-        <item>2 SEGUNDA PREGUNTA COSTUMBRES</item>
-        <item>3 TERCERA PREGUNTA COSTUMBRES</item>
+        <item>Las proteínas de origen vegetal que consumían los Muiscas eran de:</item>
+        <item>¿Cuál es el material del cuál estaban hechas las mantas de los Muiscas?</item>
+        <item>¿De qué material eran los cascos que usaban los güechas (guerreros)?</item>
     </array>
 
     <array name="repuestasPrimeraPreguntaCostumbres">
-        <item>Opcion1 pregunta1 COSTUMBRES</item>
-        <item>Opcion2 pregunta1 COSTUMBRES</item>
-        <item>Opcion3 pregunta1 COSTUMBRES</item>
-        <item>Opcion4 pregunta1 COSTUMBRES</item>
+        <item>Maní, coca y fríjoles</item> //correcta
+        <item>Lentejas, arvejas y soja</item>
+        <item>Garbanzos, avena y quinoa</item>
+        <item>Avena, lentejas y coca</item>
     </array>
     <array name="repuestasSegundaPreguntaCostumbres">
-        <item>Opcion1 pregunta2 COSTUMBRES</item>
-        <item>Opcion2 pregunta2 COSTUMBRES</item>
-        <item>Opcion3 pregunta2 COSTUMBRES</item>
-        <item>Opcion4 pregunta2 COSTUMBRES</item>
+        <item>Algodón</item> //correcta
+        <item>Seda</item>
+        <item>Lana</item>
+        <item>Almidón</item>
     </array>
     <array name="repuestasTerceraPreguntaCostumbres">
-        <item>Opcion1 pregunta3 COSTUMBRES</item>
-        <item>Opcion2 pregunta3 COSTUMBRES</item>
-        <item>Opcion3 pregunta3 COSTUMBRES</item>
-        <item>Opcion4 pregunta3 COSTUMBRES</item>
+        <item>Plata</item>
+        <item>Algodón</item>
+        <item>Oro</item> //correcta
+        <item>Almidón</item>
     </array>
 </resources>

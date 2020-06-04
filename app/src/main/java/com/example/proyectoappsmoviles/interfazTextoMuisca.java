@@ -8,14 +8,30 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import java.sql.SQLOutput;
+
 public class interfazTextoMuisca extends AppCompatActivity {
 
     public int numeroDePagina = 1; //Para mostrar el numero de pagina en la parte superior de la aplicación
     public int numeroDeTexto = 0;  //Para saber en que parte del texto va la aplicación
     //Se guardan las imagenes en un arreglo
-    public int[] numeroDeImagen = {R.drawable.img1, R.drawable.img2, R.drawable.img3,0, R.drawable.img4, R.drawable.img5, R.drawable.img6, 0,
+    public int[] numeroDeImagenGeografia = {R.drawable.img1, R.drawable.img2, R.drawable.img3,0, R.drawable.img4, R.drawable.img5, R.drawable.img6, 0,
                                     R.drawable.img2, R.drawable.img8, R.drawable.img9, 0};
+    public int[] numeroDeImagenRecorrido = {R.drawable.img10, R.drawable.img11, R.drawable.img12,0, R.drawable.img13, R.drawable.img14, R.drawable.img15, 0,
+            R.drawable.img16, R.drawable.img10, R.drawable.img18, 0};
+    public int[] numeroDeImagenMitologia = {R.drawable.img19, R.drawable.img20, R.drawable.img21,0, R.drawable.img22, R.drawable.img23, R.drawable.img24, 0,
+            R.drawable.img25, R.drawable.img26, R.drawable.img27, 0};
+    public int[] numeroDeImagenCostumbres = {R.drawable.img28, R.drawable.img29, R.drawable.img30,0, R.drawable.img31, R.drawable.img32, R.drawable.img33, 0,
+            R.drawable.img34, R.drawable.img35, R.drawable.img36, 0};
 
+    int puntajeGeografia = 100;
+    int puntajeRecorrido = 100;
+    int puntajeMitologia = 100;
+    int puntajeCostumbres = 100;
+
+    MainActivity p = new MainActivity();
+
+    int acumuladoG = 0;
     String estoyEn = "";  //Variable para indicar en que tema esta
 
     @Override
@@ -45,132 +61,168 @@ public class interfazTextoMuisca extends AppCompatActivity {
 
             dondeEstoy = mensaje;
 
-            if(dondeEstoy.equals("Geografía y politica")) {
+            if(dondeEstoy.contains("Geografía y politica")) {
+
                 titulo.setText(mensaje.toUpperCase());
                 nroPagina.setText(numeroDePagina+"/9");
-                imagenTextoMuisca.setImageResource(numeroDeImagen[numeroDeTexto]);
+                imagenTextoMuisca.setImageResource(numeroDeImagenGeografia[numeroDeTexto]);
                 texto.setText(textoGeografia[numeroDeTexto]);
                 estoyEn = "Geografia";
             }
 
-            else if(dondeEstoy.equals("Recorrido Sagrado")) {
+            else if(dondeEstoy.contains("Recorrido Sagrado")) {
                 titulo.setText(mensaje.toUpperCase());
                 nroPagina.setText(numeroDePagina+"/9");
-                imagenTextoMuisca.setImageResource(numeroDeImagen[numeroDeTexto]);
+                imagenTextoMuisca.setImageResource(numeroDeImagenRecorrido[numeroDeTexto]);
                 texto.setText(textoRecorridoSagrado[numeroDeTexto]);
                 estoyEn = "Recorrido Sadrado";
             }
 
-            else if(dondeEstoy.equals("Mitología")) {
+            else if(dondeEstoy.contains("Mitología")) {
                 titulo.setText(mensaje.toUpperCase());
                 nroPagina.setText(numeroDePagina+"/9");
-                imagenTextoMuisca.setImageResource(numeroDeImagen[numeroDeTexto]);
+                imagenTextoMuisca.setImageResource(numeroDeImagenMitologia[numeroDeTexto]);
                 texto.setText(textoMitologia[numeroDeTexto]);
                 estoyEn = "Mitologia";
             }
-            else if(dondeEstoy.equals("Costumbres")) {
+            else if(dondeEstoy.contains("Costumbres")) {
                 titulo.setText(mensaje.toUpperCase());
                 nroPagina.setText(numeroDePagina+"/9");
-                imagenTextoMuisca.setImageResource(numeroDeImagen[numeroDeTexto]);
+                imagenTextoMuisca.setImageResource(numeroDeImagenCostumbres[numeroDeTexto]);
                 texto.setText(textoCostumbres[numeroDeTexto]);
                 estoyEn = "Costumbres";
             }
-            else if(dondeEstoy.equals("G3") || dondeEstoy.equals("G7") || dondeEstoy.equals("G0")){
-                if(dondeEstoy.equals("G0")){
+            else if(dondeEstoy.contains("G3") || dondeEstoy.contains("G7") || dondeEstoy.contains("G0")){
+                String cadena = "";
+                cadena+=dondeEstoy;
+                acumuladoG = acumuladoG+(Integer.parseInt(dondeEstoy.substring(2,dondeEstoy.length())));
+                if(dondeEstoy.contains("G0")){
+
+
+                    p.puntajeGeografia = Integer.parseInt(dondeEstoy.substring(2,dondeEstoy.length()));
+
+                    System.out.println("QUE PASÓ: "+dondeEstoy);
+                    System.out.println("QUE PASÓ22: "+cadena);
+
                     Intent finGeografia = new Intent(this, MainActivity.class);
+                    Bundle miBundle2 = new Bundle();
+                    miBundle2.putString("resultado", dondeEstoy);
+                    finGeografia.putExtras(miBundle2);
                     startActivity(finGeografia);
                 }
                 else{
                     titulo.setText("GEOGRAFÍA Y POLITICA");
-                    if(dondeEstoy.equals("G3")){
+                    if(dondeEstoy.contains("G3")){
+                        System.out.println("g3: "+dondeEstoy);
+                        //puntajeGeografia = puntajeGeografia-(Integer.parseInt(dondeEstoy.substring(2,dondeEstoy.length()))*10);
                         numeroDeTexto = 4;
                     }
-                    if(dondeEstoy.equals("G7")) {
+                    if(dondeEstoy.contains("G7")) {
+                        System.out.println("g7: "+dondeEstoy);
+                        //puntajeGeografia = puntajeGeografia-(Integer.parseInt(dondeEstoy.substring(2,dondeEstoy.length()))*10);
                         numeroDeTexto = 8;
                     }
-                    if(dondeEstoy.equals("G3")){
+                    if(dondeEstoy.contains("G3")){
                         numeroDePagina = numeroDeTexto;
                     }
                     else {
                         numeroDePagina = numeroDeTexto - 1;
                     }
                     nroPagina.setText(numeroDePagina+"/9");
-                    imagenTextoMuisca.setImageResource(numeroDeImagen[numeroDeTexto]);
+                    puntajeGeografia = puntajeGeografia-(Integer.parseInt(dondeEstoy.substring(2,dondeEstoy.length()))*10);
+                   // System.out.println("tt2: "+dondeEstoy+" ll: "+dondeEstoy.substring(2,dondeEstoy.length()));
+
+                    imagenTextoMuisca.setImageResource(numeroDeImagenGeografia[numeroDeTexto]);
                     texto.setText(textoGeografia[numeroDeTexto]);
                     estoyEn = "Geografia";
                 }
             }
-            else if(dondeEstoy.equals("R3") || dondeEstoy.equals("R7") || dondeEstoy.equals("R0")){
-                if(dondeEstoy.equals("R0")){
-                    Intent finGeografia = new Intent(this, MainActivity.class);
-                    startActivity(finGeografia);
+            else if(dondeEstoy.contains("R3") || dondeEstoy.contains("R7") || dondeEstoy.contains("R0")){
+
+                acumuladoG = acumuladoG+(Integer.parseInt(dondeEstoy.substring(2,dondeEstoy.length())));
+                if(dondeEstoy.contains("R0")){
+                    Intent finRecorrido = new Intent(this, MainActivity.class);
+                    Bundle miBundle2 = new Bundle();
+                    miBundle2.putString("resultado", dondeEstoy);
+                    finRecorrido.putExtras(miBundle2);
+                    startActivity(finRecorrido);
                 }
                 else{
                     titulo.setText("RECORRIDO SAGRADO");
-                    if(dondeEstoy.equals("R3")){
+                    if(dondeEstoy.contains("R3")){
                         numeroDeTexto = 4;
                     }
-                    if(dondeEstoy.equals("R7")) {
+                    if(dondeEstoy.contains("R7")) {
                         numeroDeTexto = 8;
                     }
-                    if(dondeEstoy.equals("R3")){
+                    if(dondeEstoy.contains("R3")){
                         numeroDePagina = numeroDeTexto;
                     }
                     else {
                         numeroDePagina = numeroDeTexto - 1;
                     }
+                    System.out.println("num pag: "+numeroDePagina);
+                    System.out.println("num texto: "+numeroDeTexto);
                     nroPagina.setText(numeroDePagina+"/9");
-                    imagenTextoMuisca.setImageResource(numeroDeImagen[numeroDeTexto]);
+                    imagenTextoMuisca.setImageResource(numeroDeImagenRecorrido[numeroDeTexto]);
                     texto.setText(textoRecorridoSagrado[numeroDeTexto]);
                     estoyEn = "Recorrido Sadrado";
                 }
             }
-            else if(dondeEstoy.equals("M3") || dondeEstoy.equals("M7") || dondeEstoy.equals("M0")){
-                if(dondeEstoy.equals("M0")){
-                    Intent finGeografia = new Intent(this, MainActivity.class);
-                    startActivity(finGeografia);
+            else if(dondeEstoy.contains("M3") || dondeEstoy.contains("M7") || dondeEstoy.contains("M0")){
+                acumuladoG = acumuladoG+(Integer.parseInt(dondeEstoy.substring(2,dondeEstoy.length())));
+                if(dondeEstoy.contains("M0")){
+                    Intent finRecorrido = new Intent(this, MainActivity.class);
+                    Bundle miBundle2 = new Bundle();
+                    miBundle2.putString("resultado", dondeEstoy);
+                    finRecorrido.putExtras(miBundle2);
+                    startActivity(finRecorrido);
                 }
                 else{
                     titulo.setText("MITOLOGÍA");
-                    if(dondeEstoy.equals("M3")){
+                    if(dondeEstoy.contains("M3")){
                         numeroDeTexto = 4;
                     }
-                    if(dondeEstoy.equals("M7")) {
+                    if(dondeEstoy.contains("M7")) {
                         numeroDeTexto = 8;
                     }
-                    if(dondeEstoy.equals("M3")){
+                    if(dondeEstoy.contains("M3")){
                         numeroDePagina = numeroDeTexto;
                     }
                     else {
                         numeroDePagina = numeroDeTexto - 1;
                     }
                     nroPagina.setText(numeroDePagina+"/9");
-                    imagenTextoMuisca.setImageResource(numeroDeImagen[numeroDeTexto]);
+                    imagenTextoMuisca.setImageResource(numeroDeImagenMitologia[numeroDeTexto]);
                     texto.setText(textoMitologia[numeroDeTexto]);
                     estoyEn = "Mitologia";
                 }
             }
-            else if(dondeEstoy.equals("C3") || dondeEstoy.equals("C7") || dondeEstoy.equals("C0")){
-                if(dondeEstoy.equals("C0")){
-                    Intent finGeografia = new Intent(this, MainActivity.class);
-                    startActivity(finGeografia);
+            else if(dondeEstoy.contains("C3") || dondeEstoy.contains("C7") || dondeEstoy.contains("C0")){
+                acumuladoG = acumuladoG+(Integer.parseInt(dondeEstoy.substring(2,dondeEstoy.length())));
+                if(dondeEstoy.contains("C0")){
+                    Intent finRecorrido = new Intent(this, MainActivity.class);
+                    Bundle miBundle2 = new Bundle();
+                    miBundle2.putString("resultado", dondeEstoy);
+                    finRecorrido.putExtras(miBundle2);
+                    startActivity(finRecorrido);
                 }
                 else{
                     titulo.setText("COSTUMBRES");
-                    if(dondeEstoy.equals("C3")){
+                    if(dondeEstoy.contains("C3")){
                         numeroDeTexto = 4;
                     }
-                    if(dondeEstoy.equals("C7")) {
+                    if(dondeEstoy.contains("C7")) {
                         numeroDeTexto = 8;
                     }
-                    if(dondeEstoy.equals("C3")){
+                    if(dondeEstoy.contains("C3")){
                         numeroDePagina = numeroDeTexto;
                     }
                     else {
                         numeroDePagina = numeroDeTexto - 1;
                     }
                     nroPagina.setText(numeroDePagina+"/9");
-                    imagenTextoMuisca.setImageResource(numeroDeImagen[numeroDeTexto]);
+                    imagenTextoMuisca.setImageResource(numeroDeImagenCostumbres[numeroDeTexto]);
                     texto.setText(textoCostumbres[numeroDeTexto]);
                     estoyEn = "Costumbres";
                 }
@@ -201,9 +253,9 @@ public class interfazTextoMuisca extends AppCompatActivity {
 
         if(numeroDeTexto < 12) {
 
-            if (estoyEn.equals("Geografia")) {
+            if (estoyEn.contains("Geografia")) {
                 nroPagina.setText(numeroDePagina+"/9");
-                imagenTextoMuisca.setImageResource(numeroDeImagen[numeroDeTexto]);
+                imagenTextoMuisca.setImageResource(numeroDeImagenGeografia[numeroDeTexto]);
                 texto2.setText(textoGeografia2[numeroDeTexto]);
                 if(numeroDeTexto == 3){
 
@@ -215,21 +267,22 @@ public class interfazTextoMuisca extends AppCompatActivity {
                 if(numeroDeTexto == 7){
 
                     Bundle miBundle = new Bundle();
-                    miBundle.putString("resultado", "G7");
+                    miBundle.putString("resultado", "G7"+acumuladoG);
                     intent.putExtras(miBundle);
                     startActivity(intent);
                 }
                 if(numeroDeTexto == 11){
 
                     Bundle miBundle = new Bundle();
-                    miBundle.putString("resultado", "G0");
+                    miBundle.putString("resultado", "G0"+acumuladoG);
                     intent.putExtras(miBundle);
                     startActivity(intent);
                 }
             }
-            if (estoyEn.equals("Recorrido Sadrado")) {
+            if (estoyEn.contains("Recorrido Sadrado")) {
                 nroPagina.setText(numeroDePagina+"/9");
-                imagenTextoMuisca.setImageResource(numeroDeImagen[numeroDeTexto]);
+                System.out.println("numero de imagen: "+numeroDeTexto);
+                imagenTextoMuisca.setImageResource(numeroDeImagenRecorrido[numeroDeTexto]);
                 texto2.setText(textoRecorridoSagrado2[numeroDeTexto]);
                 if(numeroDeTexto == 3){
 
@@ -241,21 +294,21 @@ public class interfazTextoMuisca extends AppCompatActivity {
                 if(numeroDeTexto == 7){
 
                     Bundle miBundle = new Bundle();
-                    miBundle.putString("resultado", "R7");
+                    miBundle.putString("resultado", "R7"+acumuladoG);
                     intent.putExtras(miBundle);
                     startActivity(intent);
                 }
                 if(numeroDeTexto == 11){
 
                     Bundle miBundle = new Bundle();
-                    miBundle.putString("resultado", "R0");
+                    miBundle.putString("resultado", "R0"+acumuladoG);
                     intent.putExtras(miBundle);
                     startActivity(intent);
                 }
             }
-            if (estoyEn.equals("Mitologia")) {
+            if (estoyEn.contains("Mitologia")) {
                 nroPagina.setText(numeroDePagina+"/9");
-                imagenTextoMuisca.setImageResource(numeroDeImagen[numeroDeTexto]);
+                imagenTextoMuisca.setImageResource(numeroDeImagenMitologia[numeroDeTexto]);
                 texto2.setText(textoMitologia2[numeroDeTexto]);
                 if(numeroDeTexto == 3){
 
@@ -267,21 +320,21 @@ public class interfazTextoMuisca extends AppCompatActivity {
                 if(numeroDeTexto == 7){
 
                     Bundle miBundle = new Bundle();
-                    miBundle.putString("resultado", "M7");
+                    miBundle.putString("resultado", "M7"+acumuladoG);
                     intent.putExtras(miBundle);
                     startActivity(intent);
                 }
                 if(numeroDeTexto == 11){
 
                     Bundle miBundle = new Bundle();
-                    miBundle.putString("resultado", "M0");
+                    miBundle.putString("resultado", "M0"+acumuladoG);
                     intent.putExtras(miBundle);
                     startActivity(intent);
                 }
             }
-            if (estoyEn.equals("Costumbres")) {
+            if (estoyEn.contains("Costumbres")) {
                 nroPagina.setText(numeroDePagina+"/9");
-                imagenTextoMuisca.setImageResource(numeroDeImagen[numeroDeTexto]);
+                imagenTextoMuisca.setImageResource(numeroDeImagenCostumbres[numeroDeTexto]);
                 texto2.setText(textoCostumbres2[numeroDeTexto]);
                 if(numeroDeTexto == 3){
 
@@ -293,14 +346,14 @@ public class interfazTextoMuisca extends AppCompatActivity {
                 if(numeroDeTexto == 7){
 
                     Bundle miBundle = new Bundle();
-                    miBundle.putString("resultado", "C7");
+                    miBundle.putString("resultado", "C7"+acumuladoG);
                     intent.putExtras(miBundle);
                     startActivity(intent);
                 }
                 if(numeroDeTexto == 11){
 
                     Bundle miBundle = new Bundle();
-                    miBundle.putString("resultado", "C0");
+                    miBundle.putString("resultado", "C0"+acumuladoG);
                     intent.putExtras(miBundle);
                     startActivity(intent);
                 }
@@ -333,9 +386,9 @@ public class interfazTextoMuisca extends AppCompatActivity {
             numeroDePagina = numeroDePagina-1;
             numeroDeTexto = numeroDeTexto-1;
 
-            if(estoyEn.equals("Geografia")) {
+            if(estoyEn.contains("Geografia")) {
                 nroPagina.setText(numeroDePagina+"/9");
-                imagenTextoMuisca.setImageResource(numeroDeImagen[numeroDeTexto]);
+                imagenTextoMuisca.setImageResource(numeroDeImagenGeografia[numeroDeTexto]);
                 texto3.setText(textoGeografia3[numeroDeTexto]);
                 if(numeroDeTexto == 3){
 
@@ -352,9 +405,9 @@ public class interfazTextoMuisca extends AppCompatActivity {
                     startActivity(preguntaAnterioir);
                 }
             }
-            if(estoyEn.equals("Recorrido Sadrado")) {
+            if(estoyEn.contains("Recorrido Sadrado")) {
                 nroPagina.setText(numeroDePagina+"/9");
-                imagenTextoMuisca.setImageResource(numeroDeImagen[numeroDeTexto]);
+                imagenTextoMuisca.setImageResource(numeroDeImagenRecorrido[numeroDeTexto]);
                 texto3.setText(textoRecorridoSagrado3[numeroDeTexto]);
                 if(numeroDeTexto == 3){
 
@@ -371,9 +424,9 @@ public class interfazTextoMuisca extends AppCompatActivity {
                     startActivity(preguntaAnterioir);
                 }
             }
-            if(estoyEn.equals("Mitologia")) {
+            if(estoyEn.contains("Mitologia")) {
                 nroPagina.setText(numeroDePagina+"/9");
-                imagenTextoMuisca.setImageResource(numeroDeImagen[numeroDeTexto]);
+                imagenTextoMuisca.setImageResource(numeroDeImagenMitologia[numeroDeTexto]);
                 texto3.setText(textoMitologia3[numeroDeTexto]);
                 if(numeroDeTexto == 3){
 
@@ -390,9 +443,9 @@ public class interfazTextoMuisca extends AppCompatActivity {
                     startActivity(preguntaAnterioir);
                 }
             }
-            if(estoyEn.equals("Costumbres")) {
+            if(estoyEn.contains("Costumbres")) {
                 nroPagina.setText(numeroDePagina+"/9");
-                imagenTextoMuisca.setImageResource(numeroDeImagen[numeroDeTexto]);
+                imagenTextoMuisca.setImageResource(numeroDeImagenCostumbres[numeroDeTexto]);
                 texto3.setText(textoCostumbres3[numeroDeTexto]);
                 if(numeroDeTexto == 3){
 

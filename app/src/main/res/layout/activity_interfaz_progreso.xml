@@ -31,8 +31,8 @@
 
     <TextView
         android:id="@+id/tfDescripcionProgreso"
-        android:layout_width="187dp"
-        android:layout_height="68dp"
+        android:layout_width="232dp"
+        android:layout_height="120dp"
         android:text="TextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

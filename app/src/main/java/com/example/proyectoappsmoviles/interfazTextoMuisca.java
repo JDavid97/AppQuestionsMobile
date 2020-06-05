@@ -108,7 +108,7 @@ public class interfazTextoMuisca extends AppCompatActivity {
                     finGeografia.putExtras(miBundle2);
                     startActivity(finGeografia);
                     Puntaje puntajeTema1 = new Puntaje("geografiaypolitica",puntajeGeografia);
-                    PuntajeDAO puntajeDAO = new PuntajeDAO(getBaseContext());
+                    PuntajeDAO puntajeDAO = new PuntajeDAO(getApplicationContext());
                     puntajeDAO.actualizarPuntaje(puntajeTema1);
                 }
                 else{
@@ -149,6 +149,9 @@ public class interfazTextoMuisca extends AppCompatActivity {
                     miBundle2.putString("resultado", "R0"+Integer.toString(puntajeRecorrido));
                     finRecorrido.putExtras(miBundle2);
                     startActivity(finRecorrido);
+                    Puntaje puntajeTema2 = new Puntaje("recorrido",puntajeRecorrido);
+                    PuntajeDAO puntajeDAO = new PuntajeDAO(getApplicationContext());
+                    puntajeDAO.actualizarPuntaje(puntajeTema2);
                 }
                 else{
                     titulo.setText("RECORRIDO SAGRADO");
@@ -182,6 +185,9 @@ public class interfazTextoMuisca extends AppCompatActivity {
                     miBundle2.putString("resultado", "M0"+Integer.toString(puntajeMitologia));
                     finRecorrido.putExtras(miBundle2);
                     startActivity(finRecorrido);
+                    Puntaje puntajeTema3 = new Puntaje("mitologia",puntajeMitologia);
+                    PuntajeDAO puntajeDAO = new PuntajeDAO(getApplicationContext());
+                    puntajeDAO.actualizarPuntaje(puntajeTema3);
                 }
                 else{
                     titulo.setText("MITOLOGÍA");
@@ -215,6 +221,9 @@ public class interfazTextoMuisca extends AppCompatActivity {
                     miBundle2.putString("resultado", "C0"+Integer.toString(puntajeCostumbres));
                     finRecorrido.putExtras(miBundle2);
                     startActivity(finRecorrido);
+                    Puntaje puntajeTema4 = new Puntaje("costumbres",puntajeCostumbres);
+                    PuntajeDAO puntajeDAO = new PuntajeDAO(getApplicationContext());
+                    puntajeDAO.actualizarPuntaje(puntajeTema4);
                 }
                 else{
                     titulo.setText("COSTUMBRES");

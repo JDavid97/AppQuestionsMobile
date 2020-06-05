@@ -96,6 +96,14 @@ public class MainActivity extends AppCompatActivity {
     }
     public void onclickProgreso(View view){
 
+        PuntajeDAO puntajeDAO = new PuntajeDAO(getApplicationContext());
+        int puntajeT1 = puntajeDAO.obtenerPuntaje("geografiaypolitica");
+        PuntajeDAO puntajeDAO2 = new PuntajeDAO(getApplicationContext());
+        int puntajeT2 = puntajeDAO2.obtenerPuntaje("recorrido");
+        PuntajeDAO puntajeDAO3 = new PuntajeDAO(getApplicationContext());
+        int puntajeT3 = puntajeDAO3.obtenerPuntaje("mitologia");
+        PuntajeDAO puntajeDAO4 = new PuntajeDAO(getApplicationContext());
+        int puntajeT4 = puntajeDAO4.obtenerPuntaje("costumbres");
         int retenerMensaje = 0;
 
         if(puntajes.size()>0){
@@ -104,13 +112,13 @@ public class MainActivity extends AppCompatActivity {
         //String cadena = Integer.toString(retenerMensaje);
 
         Intent intent = new Intent(this, interfaz_progreso.class);
-        float promedio = (puntajeGeografia+puntajeRecorrido+puntajeMitologia+puntajeCostumbres)/4;
+        float promedio = (puntajeT1+puntajeT2+puntajeT3+puntajeT4)/4;
         Bundle miBundle2 = new Bundle();
-        miBundle2.putString("resultado", "Geografía y politica: "+puntajeGeografia+
-                "\nRecorrido Sagrado: "+puntajeRecorrido+
-                "\nMitología: "+puntajeMitologia+
-                "\nCostumbres: "+puntajeCostumbres+
-                "\n\nPromedio: "+promedio;
+        miBundle2.putString("resultado", "Geografía y politica: "+puntajeT1+
+                "\nRecorrido Sagrado: "+puntajeT2+
+                "\nMitología: "+puntajeT3+
+                "\nCostumbres: "+puntajeT4+
+                "\n\nPromedio: "+promedio);
         intent.putExtras(miBundle2);
         startActivity(intent);
     }

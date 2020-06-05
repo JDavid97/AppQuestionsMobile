@@ -1,7 +1,7 @@
 package com.example.proyectoappsmoviles;
 
 public final class UtilitiesDataBase {
-    static final String DATABASE_NAME="puntajes";
+    static final String DATABASE_NAME="hola";
     static final int VERSION=1;
 
     public class TablaPuntaje{

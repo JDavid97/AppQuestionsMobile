@@ -322,12 +322,13 @@
         <item>Recorrer cinco lagunas de la región y rendirles culto</item>
         <item>Tirar al agua esmeraldas y oro</item>
         <item>Hacer cantos y dar ofrendas alrededor de las lagunas</item>
+        <item>Hacer cantos y tirar al agua esmeraldas</item>
     </array>
     <array name="repuestasSegundaPreguntaRecorridoSagrado">
         <item>Laguna de Siecha</item>
         <item>Laguna de Teusacá</item>
         <item>Laguna de Guatavita</item>
-        <item>Laguna de Guatavita</item>
+        <item>Laguna de Guasca</item>
     </array>
     <array name="repuestasTerceraPreguntaRecorridoSagrado">
         <item>Laguna de Ubaqué</item>
